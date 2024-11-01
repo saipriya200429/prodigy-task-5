@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .weather-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 400px;
+    position: relative;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .weather-card:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  #city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #city-input:focus {
+    outline: none;
+    border-color: #2196F3;
+  }
+  
+  #city-input-btn {
+    padding: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #city-input-btn:hover {
+    background-color: #1565C0;
+  }
+  
+  #weather-info {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #weather-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 8px 0;
+    color: #FF5722;
+  }
+  
+  #description {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #wind-speed {
+    font-size: 16px;
+    color: #2196F3;
+  }
+  
+  #date {
+    font-size: 14px;
+    color: #757575;
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
